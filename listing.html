@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Listing ::</title>
+
+    <!-- Font Css -->
+    <link href="./font/stylesheet.css" media="all" rel="stylesheet">
+
+    <!-- Owl -->
+    <link href="css/owl.carousel.min.css" media="all" rel="stylesheet">
+    <link href="css/intlTelInput.css" media="all" rel="stylesheet">
+    <link href="css/flag-icon.css" media="all" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css"/> -->
+    <!-- Style Css -->
+    <link href="css/style.css" media="all" rel="stylesheet">
+</head>
+<body>
+    <div class="page-loader" style="display: none;">
+        <div class="page-loader-box">
+            <div class="dna_cont">
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+            </div>
+        </div>
+    </div>
+    <a class="scrollup" href="javascript:void(0);" aria-label="Scroll to top" style="display: none;"><i class="fas fa-chevron-up"></i></a>
+    <header class="main-header start-style start-header other-header">
+        <!-- <div class="top-header">
+            <div class="container-fluid left-right-gap">
+                <div class="row justify-content-end">
+                    <div class="col-auto">
+                        <ul class="top-help d-flex align-items-center">
+                            <li><a href="#"><i class="bell fa-solid fa-bell"></i></a></li>
+                            <li><a href="tail:+010 3568 9875">need help? +010 3568 9875</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="bottom-header">
+            <div class="container-fluid left-right-gap">
+                <div class="row align-items-center">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="img-block" src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="navArea d-flex justify-content-start align-items-center">
+                            <nav id="res_nav" class="navigation">
+                                <button id="menu_res" class="menu-responsive">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <ul class="d-flex justify-content-end">
+                                    <li class="active"><a href="#">USD</a></li>
+                                    <li><a href="#">Become a Tutor</a></li>
+                                    <li><a href="#">help</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="login-area-wrap">
+                        <div class="account-area">
+                            <ul class="d-flex">
+                                <li><a class="notification" href="#"><i class="bell fa-solid fa-bell"></i><span class="off-text">notification</span></a></li>
+                                <li class="position-relative language-select-globe" onclick="lang_select()">
+                                    <div class="language-select">
+                                        <span class="selected-lang">english</span>
+                                        <ul class="lang-list" style="display: none;">
+                                            <li class="active"><a href="#">English</a></li>
+                                            <li><a href="#">Français</a></li>
+                                            <li><a href="#">Português</a></li>
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="acc-sign-in" href="#">sign in</a></li>
+                                <li><a class="acc-join" href="#">join</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="listing-sec pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="filter-left">
+                    <div class="filter-left-wrap">
+                        <div class="filter-left-head">
+                            <h4>filter</h4>
+                        </div>
+                        <div class="filter-left-body">
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>price per hour</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="price-min-max d-flex justify-content-between align-items-end">
+                                    <div class="min-max-box-list">
+                                        <label class="lbl-style">Min</label>
+                                        <div class="input-group min-max-box">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control min-max-input" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                    <div class="min-max-box-list">
+                                        <div class="min-max-to">
+                                            <span class="input-group-text">to</span>
+                                        </div>
+                                    </div>
+                                    <div class="min-max-box-list">
+                                        <label class="lbl-style">max</label>
+                                        <div class="input-group min-max-box">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control min-max-input" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>Countries</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="filter-select-src">
+                                    <select class="form-select filter-select-src-style">
+                                        <option>search country</option>
+                                        <option>india</option>
+                                        <option>nepal</option>
+                                        <option>bangladesh</option>
+                                        <option>sri lanka</option>
+                                        <option>afganisthan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>online</h4></li>
+                                </ul>
+                                <ul class="online-btn-wrap">
+                                    <li>
+                                        <div class="toggle-src">
+                                            <input type="checkbox" id="switch" hidden>
+                                            <label for="switch"></label>
+                                        </div>
+                                    </li>
+                                    <li>Online freelancers only</li>
+                                </ul>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>Countries</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="filter-src position-relative">
+                                    <input type="text" class="form-control filter-src-input" placeholder="search subject">
+                                    <button type="submit" class="filter-src-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                <ul class="checkbox-list mt-3">
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="1_subject">
+                                        <label for="1_subject">english</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="2_subject">
+                                        <label for="2_subject">maths</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="3_subject">
+                                        <label for="3_subject">history</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="4_subject">
+                                        <label for="4_subject">physics</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="5_subject">
+                                        <label for="5_subject">biology</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>Rating</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <ul class="checkbox-list">
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="rt5">
+                                        <label for="rt5"><div class="stars" style="--rating: 5;"></div></label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="rt4">
+                                        <label for="rt4"><div class="stars" style="--rating: 4;"></div></label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="rt3">
+                                        <label for="rt3"><div class="stars" style="--rating: 3;"></div></label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="rt2">
+                                        <label for="rt2"><div class="stars" style="--rating: 2;"></div></label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="rt1">
+                                        <label for="rt1"><div class="stars" style="--rating: 1;"></div></label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>Reviews</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="price-min-max d-flex justify-content-between align-items-end">
+                                    <div class="min-max-box-list">
+                                        <label class="lbl-style">Min</label>
+                                        <div class="input-group min-max-box">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control min-max-input" placeholder="0">
+                                        </div>
+                                    </div>
+                                    <div class="min-max-box-list">
+                                        <div class="min-max-to">
+                                            <span class="input-group-text">to</span>
+                                        </div>
+                                    </div>
+                                    <div class="min-max-box-list">
+                                        <label class="lbl-style">max</label>
+                                        <div class="input-group min-max-box">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control min-max-input" placeholder="500+">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>Can Speak</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="filter-src position-relative">
+                                    <input type="text" class="form-control filter-src-input" placeholder="search subject">
+                                    <button type="submit" class="filter-src-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                <ul class="checkbox-list mt-3">
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="1_subject1">
+                                        <label for="1_subject1">English C2</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="2_subject2">
+                                        <label for="2_subject2">Chinese A2</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="3_subject3">
+                                        <label for="3_subject3">Spanish A2</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="4_subject4">
+                                        <label for="4_subject4">Hindi B2</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="5_subject5">
+                                        <label for="5_subject5">French C3</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>native language</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="filter-src position-relative">
+                                    <input type="text" class="form-control filter-src-input" placeholder="search subject">
+                                    <button type="submit" class="filter-src-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                <ul class="radio-list mt-3">
+                                    <li class="radio">
+                                        <input type="radio" id="1_subject1r" name="language">
+                                        <label for="1_subject1r">English C2</label>
+                                    </li>
+                                    <li class="radio">
+                                        <input type="radio" id="2_subject2r" name="language">
+                                        <label for="2_subject2r">Chinese A2</label>
+                                    </li>
+                                    <li class="radio">
+                                        <input type="radio" id="3_subject3r" name="language">
+                                        <label for="3_subject3r">Spanish A2</label>
+                                    </li>
+                                    <li class="radio">
+                                        <input type="radio" id="4_subject4r" name="language">
+                                        <label for="4_subject4r">Hindi B2</label>
+                                    </li>
+                                    <li class="radio">
+                                        <input type="radio" id="5_subject5r" name="language">
+                                        <label for="5_subject5r">French C3</label>
+                                    </li>
+                                </ul>
+                                <!-- <div class="filter-select-src">
+                                    <select class="form-select filter-select-src-style">
+                                        <option>search country</option>
+                                        <option>india</option>
+                                        <option>nepal</option>
+                                        <option>bangladesh</option>
+                                        <option>sri lanka</option>
+                                        <option>afganisthan</option>
+                                    </select>
+                                </div> -->
+                            </div>
+                            <div class="filter-left-box">
+                                <ul class="src-head-wrap d-flex justify-content-between align-content-center">
+                                    <li><h4>Responce Rate</h4></li>
+                                    <li><a href="#">clear</a></li>
+                                </ul>
+                                <div class="price-min-max d-flex justify-content-between align-items-end">
+                                    <div class="min-max-box-list">
+                                        <label class="lbl-style">Min</label>
+                                        <div class="input-group min-max-box">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control min-max-input" placeholder="0%">
+                                        </div>
+                                    </div>
+                                    <div class="min-max-box-list">
+                                        <div class="min-max-to">
+                                            <span class="input-group-text">to</span>
+                                        </div>
+                                    </div>
+                                    <div class="min-max-box-list">
+                                        <label class="lbl-style">max</label>
+                                        <div class="input-group min-max-box">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control min-max-input" placeholder="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="filter-left-box">
+                                <h4>timing</h4>
+                                <ul class="checkbox-list">
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="1_timing">
+                                        <label for="1_timing">before 8pm</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="2_timing">
+                                        <label for="2_timing">before 12pm</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="3_timing">
+                                        <label for="3_timing">after 5pm</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="4_timing">
+                                        <label for="4_timing">before 2pm</label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <input type="checkbox" id="5_timing">
+                                        <label for="5_timing">after 8pm</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-left-box">
+                                <h4>also speaks</h4>
+                                <div class="filter-select-src">
+                                    <select class="form-select filter-select-src-style">
+                                        <option>English</option>
+                                        <option>Français</option>
+                                        <option>Português</option>
+                                        <option>Deutsch</option>                                        
+                                    </select>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-right">
+                   <div class="listing-sortby">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <div class="sorted-wrap d-flex align-items-center">
+                                    <p>sorted by -</p>
+                                    <span> 1-20 of 156K Result</span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="sorted-wrap d-flex align-items-center">
+                                    <p>sorted by</p>
+                                    <div class="filter-select-src">
+                                        <select class="form-select filter-select-src-style">
+                                            <option value="">highly demand first</option>
+                                            <option value="">low demand first</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-6">
+                            <div class="teacher-listing-wrap d-flex flex-wrap">
+                                <div class="teacher-listing-lft d-flex flex-wrap">
+                                    <div class="teacher-listing-img">
+                                        <span class="listing-img-box position-relative">
+                                            <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                            <span class="online-status"><i class="fa-solid fa-circle"></i></span>
+                                        </span>
+                                    </div>
+                                    <div class="teacher-listing-details">
+                                        <h4>Archivision3D <span class="user-name-id">@dreams3ds</span> <sup><img src="images/icon/user-badge.png" alt=""></sup></h4>
+                                        <ul class="d-flex teacher-info mt-1">
+                                            <li class="teacher-stars-list"><div class="stars" style="--rating: 4.3;"></div><span class="total-revw">4.3</span></li>
+                                            <li><i class="fa-solid fa-message"></i> <strong>1547</strong></li>
+                                            <li><i class="fa-solid fa-reply"></i> <strong>90%</strong></li>
+                                            <li>
+                                                <div class="country-flag">
+                                                    <span class="flag-icon flag-icon-us flag-icon-squared country-flag-circle"></span>
+                                                    <span class="teacher-country-name2">us</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="teacher-info2">
+                                            <li><strong>Native :</strong> Chinese </li> 
+                                            <li><strong>Speaks :</strong> English C2, Chinese A2</li>   
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, totam nobis labore itaque cupiditate dignissimos repellat. Error provident</p>
+                                    </div>
+                                </div>
+                                <div class="teacher-listing-rgt">
+                                    <div class="price-availability d-flex align-items-center">
+                                        <!-- <div class="teacher-price">
+                                            <h4><i class="fa-solid fa-dollar-sign"></i>1065 <span>/hour</span></h4>
+                                        </div> -->
+                                        <div class="teacher-available">
+                                            <ul>
+                                                <li class="teacherbox-tutor"><a href="#">follow</a></li>
+                                                <li class="teacherbox-available"><a href="#">availability</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-6">
+                            <div class="teacher-listing-wrap d-flex flex-wrap">
+                                <div class="teacher-listing-lft d-flex flex-wrap">
+                                    <div class="teacher-listing-img">
+                                        <span class="listing-img-box position-relative">
+                                            <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                            <span class="online-status"><i class="fa-solid fa-circle"></i></span>
+                                        </span>
+                                    </div>
+                                    <div class="teacher-listing-details">
+                                        <h4>Archivision3D <span class="user-name-id">@dreams3ds</span></h4>
+                                        <ul class="d-flex teacher-info mt-1">
+                                            <li class="teacher-stars-list"><div class="stars" style="--rating: 4.3;"></div><span class="total-revw">4.3</span></li>
+                                            <li><i class="fa-solid fa-message"></i> <strong>1547</strong></li>
+                                            <li><i class="fa-solid fa-reply"></i> <strong>90%</strong></li>
+                                            <li class="teacher-country">
+                                                <div class="teacher-country-flag">
+                                                    <div class="iti-flag iti-us"></div>
+                                                </div>
+                                                <div class="teacher-country-name"><strong>us</strong></div>
+                                            </li>
+                                        </ul>
+                                        <ul class="teacher-info2">
+                                            <li><strong>Native :</strong> Chinese </li> 
+                                            <li><strong>Speaks :</strong> English C2, Chinese A2</li>   
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, totam nobis labore itaque cupiditate dignissimos repellat. Error provident</p>
+                                    </div>
+                                </div>
+                                <div class="teacher-listing-rgt">
+                                    <div class="price-availability d-flex align-items-center">
+                                        <div class="teacher-available">
+                                            <ul>
+                                                <li class="teacherbox-tutor"><a href="#">follow</a></li>
+                                                <li class="teacherbox-available"><a href="#">availability</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-6">
+                            <div class="teacher-listing-wrap d-flex flex-wrap">
+                                <div class="teacher-listing-lft d-flex flex-wrap">
+                                    <div class="teacher-listing-img">
+                                        <span class="listing-img-box position-relative">
+                                            <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                            <!-- <span class="online-status"><i class="fa-solid fa-circle"></i></span> -->
+                                        </span>
+                                    </div>
+                                    <div class="teacher-listing-details">
+                                        <h4>Archivision3D <span class="user-name-id">@dreams3ds</span> <sup><img src="images/icon/user-badge.png" alt=""></sup></h4>
+                                        <ul class="d-flex teacher-info mt-1">
+                                            <li class="teacher-stars-list"><div class="stars" style="--rating: 4.3;"></div><span class="total-revw">4.3</span></li>
+                                            <li><i class="fa-solid fa-message"></i> <strong>1547</strong></li>
+                                            <li><i class="fa-solid fa-reply"></i> <strong>90%</strong></li>
+                                            <li class="teacher-country">
+                                                <div class="teacher-country-flag">
+                                                    <div class="iti-flag iti-us"></div>
+                                                </div>
+                                                <div class="teacher-country-name"><strong>us</strong></div>
+                                            </li>
+                                        </ul>
+                                        <ul class="teacher-info2">
+                                            <li><strong>Native :</strong> Chinese </li> 
+                                            <li><strong>Speaks :</strong> English C2, Chinese A2</li>   
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, totam nobis labore itaque cupiditate dignissimos repellat. Error provident</p>
+                                    </div>
+                                </div>
+                                <div class="teacher-listing-rgt">
+                                    <div class="price-availability d-flex align-items-center">
+                                        <div class="teacher-available">
+                                            <ul>
+                                                <li class="teacherbox-tutor"><a href="#">follow</a></li>
+                                                <li class="teacherbox-available"><a href="#">availability</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer ftr-bg-ptrn-wrap">
+        <span class="ftr-bg-ptrn"><img  class="img-block" src="images/ftr-bg-pettrn.png" alt=""></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-about">
+                        <span class="ftr-logo">
+                            <img class="img-block" src="images/logo-clr.png" alt="">
+                        </span>
+                        <ul class="ftr-about-list">
+                            <li><i class="fa-solid fa-globe"></i>US International</li>
+                            <li><i class="fa-solid fa-circle-question"></i><a href="#">Help & Support</a></li>
+                            <li><i class="fa-solid fa-dollar-sign"></i>USD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-menu-wrap">
+                        <h4>About</h4>
+                        <ul class="ftr-menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-menu-wrap">
+                        <h4>Terms</h4>
+                        <ul class="ftr-menu">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Copyright Policy</a></li>
+                            <li><a href="#">Code of Conduct</a></li>
+                            <li><a href="#">Fees and Charges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-social">
+                        <h4>App</h4>
+                        <ul class="ftr-app-store">
+                            <li><a href="#"><img class="img-block" src="images/icon/google-play.png" alt=""></a></li>
+                            <li><a href="#"><img class="img-block" src="images/icon/apple-store.png" alt=""></a></li>
+                        </ul>
+                        <ul class="ftr-social-list d-flex">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btm-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="btm-ftr-text">
+                           <p><strong>94,402,550</strong></p>
+                           <p>Registered Users</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="btm-ftr-text">
+                            <p><strong>56,256,656</strong></p>
+                            <p>Teacher</p>
+                         </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="btm-ftr-text">
+                            <p>Lorem Ipsum ® is a registered Trademark of Lorem Ipsum</p>
+                            <p>Copyright © 2023 Aqualeaf It Solution Pvt. Ltd.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+       var menuheight = $(".main-header").outerHeight();
+       $(".home-banner").css({"padding-top": menuheight});
+
+       $(document).on('click', '.advnce_src', function(){
+        $(".advnce_box").slideToggle();
+       });
+    </script>
+    
+</body>
+</html>
