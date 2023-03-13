@@ -103,6 +103,35 @@ $(function() {
         }
     });
 
+    /*-------------------------------------Worldwide Order Slider-----------------------------------*/
+    $(".upcoming-lesson_slider").owlCarousel({
+        loop:false,
+        margin:25,
+        stagePadding:20,
+        // autoplay: true,
+        nav:true,
+        dots:false,
+        navElement: 'div',
+        navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            800:{
+                items:3
+            },
+            1000:{
+                items:4
+            },
+            1300:{
+                items:5
+            }
+        }
+    });
+
     /*-------------------------------------Video Gallery Slider-----------------------------------*/
     $(".videogallery_slider").owlCarousel({
         loop:false,
@@ -136,4 +165,11 @@ document.addEventListener('click', function (e) {
     }
     e.stopPropagation();
 });
+
+function custome_popup() {
+    $(".custome-popup").fadeIn();
+};
+function custome_popup_close() {
+    $(".custome-popup").fadeOut();
+};
 

@@ -105,8 +105,9 @@
                             <div class="teacher-details-lft">
                                 <div class="teacher-details-top d-flex flex-wrap">
                                     <div class="teacher-details-img">
-                                        <span class="details-img-box">
+                                        <span class="details-img-box position-relative">
                                             <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                            <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
                                         </span>
                                     </div>
                                     <div class="teacher-details-info">
@@ -120,7 +121,7 @@
                                             <li>
                                                 <div class="country-flag">
                                                     <span class="flag-icon flag-icon-us flag-icon-squared country-flag-circle"></span>
-                                                    <span class="teacher-country-name2">us</span>
+                                                    <span class="teacher-country-name2">United States</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -147,7 +148,7 @@
                                 <div class="teacher-available">
                                     <ul>
                                         <li class="teacherbox-tutor"><a href="#"><i class="fa-solid fa-plus"></i>follow</a></li>
-                                        <li class="teacherbox-available"><a href="#"><i class="fa-regular fa-comment"></i>Chat With Me</a></li>
+                                        <li class="teacherbox-available"><a href="javascript:;" onclick="custome_popup()"><i class="fa-regular fa-comment"></i>Chat With Me</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -175,8 +176,50 @@
                         </div>
                     </div>
                     <div class="border-box">
+                        <div class="teacher-small-info">
+                            <h4>Gallery</h4>
+                        </div>
                         <div class="teacher-gallery">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="teacher-gallery-video">
+                                        <img class="img-block" src="images/gallery/video-thumb/video-thumb.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="teacher-gallery-video">
+                                        <img class="img-block" src="images/gallery/video-thumb/video-thumb.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="teacher-gallery-video">
+                                        <img class="img-block" src="images/gallery/video-thumb/video-thumb.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="teacher-gallery-video">
+                                        <div class="the-video">
+                                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eIJNjEp-By0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="teacher-gallery-video">
+                                        <div class="the-video">
+                                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eIJNjEp-By0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="teacher-gallery-video">
+                                        <div class="the-video">
+                                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eIJNjEp-By0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-12"></div>
+                            </div>
+                            <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                   <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Video</button>
                                 </li>
@@ -222,7 +265,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="border-box">
@@ -445,6 +488,7 @@
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -476,9 +520,50 @@
         </div>
     </footer>
 
-    
+    <div class="custome-popup" style="display: none;">
+        <button class="custome-popup-close" onclick="custome_popup_close()"><i class="fa-regular fa-circle-xmark"></i></button>
+        <div class="white-sdow-box">
+            <div class="custome-popup-wrap">
+                <div class="quary-user-list d-flex align-items-center">
+                    <div class="quary-user-img">
+                        <span class="quary-img-box position-relative">
+                            <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                            <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                        </span>
+                    </div>
+                    <div class="quary-user-desc">
+                        <h4>Jenni</h4>
+                        <p><strong>Online</strong> | Avg. response time: 30%</p>
+                    </div>
+                </div>
+                <div class="quary-body">
+                    <div class="front-textare1">
+                        <textarea name="" id="" rows="6" class="form-control front-textare-style1" placeholder="Sk copywriter007 a question or share your project details (requirments, timeline, budget, etc.)"></textarea>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center mt-2">
+                    <div class="col-auto">
+                        <div class="quary-icon-lft">
+                            <ul class="d-flex">
+                                <li><button type="button" class="quary-emoji"><i class="fa-regular fa-face-smile"></i></button></li>
+                                <li class="quary-file-up">
+                                    <input type="file" id="quary-file" hidden="">
+                                    <label class="quary-file-icon" for="msg-file"><i class="fa-solid fa-paperclip"></i></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="quary-submit-wrap">
+                            <button type="button" class="skyblue-btn"><i class="fa-regular fa-paper-plane"></i> send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
   
-  <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade booking-summery-modal" id="bookingSummery" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookingSummeryLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-mdm">
             <div class="modal-content">

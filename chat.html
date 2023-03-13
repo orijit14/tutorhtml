@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Chat ::</title>
+
+    <!-- Font Css -->
+    <link href="./font/stylesheet.css" media="all" rel="stylesheet">
+
+    <!-- Owl -->
+    <link href="css/flag-icon.css" media="all" rel="stylesheet">
+    <!-- Style Css -->
+    <link href="css/style.css" media="all" rel="stylesheet">
+</head>
+<body>
+    <div class="page-loader" style="display: none;">
+        <div class="page-loader-box">
+            <div class="dna_cont">
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+                <div class="nucleobase"></div>
+            </div>
+        </div>
+    </div>
+    <a class="scrollup" href="javascript:void(0);" aria-label="Scroll to top" style="display: none;"><i class="fas fa-chevron-up"></i></a>
+    <header class="main-header start-style start-header other-header">
+        <!-- <div class="top-header">
+            <div class="container-fluid left-right-gap">
+                <div class="row justify-content-end">
+                    <div class="col-auto">
+                        <div class="need-help"><a href="tail:+010 3568 9875">need help? +010 3568 9875</a></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="bottom-header">
+            <div class="container-fluid left-right-gap">
+                <div class="row align-items-center">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="img-block" src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="navArea">
+                            <nav id="res_nav" class="navigation">
+                                <button id="menu_res" class="menu-responsive">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <ul class="d-flex justify-content-end">
+                                    <li  class="active"><a href="#">USD</a></li>
+                                    <li><a href="#">Become a Tutor</a></li>
+                                    <li><a href="#">help</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="login-area-wrap">
+                        <div class="account-area">
+                            <ul class="d-flex">
+                                <li><a class="notification" href="#"><i class="bell fa-solid fa-bell"></i><span class="off-text">notification</span></a></li>
+                                <li class="position-relative language-select-globe" onclick="lang_select()">
+                                    <div class="language-select">
+                                        <span class="selected-lang">english</span>
+                                        <ul class="lang-list" style="display: none;">
+                                            <li class="active"><a href="#">English</a></li>
+                                            <li><a href="#">Français</a></li>
+                                            <li><a href="#">Português</a></li>
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- <select class="form-control selectOption_1 language-select">
+                                        <option>English</option>
+                                        <option>French</option>
+                                        <option>Russian</option>
+                                    </select> -->
+                                </li>
+                                <li><a class="acc-sign-in" href="#">sign in</a></li>
+                                <li><a class="acc-join" href="#">join</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-50 pb-50">
+        <div class="container-fluid left-right-gap">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-6 col-12">
+                    <div class="row">
+                        <div class="chat-lft">
+                            <div class="chat-lft-head white-sdow-box">
+                                <div class="d-flex">
+                                    <div class="lft-head-select">
+                                        <select class="form-select head-select-style">
+                                            <option value="">All Conversation</option>
+                                            <option value="">sort by time</option>
+                                            <option value="">sort by unread</option>
+                                        </select>
+                                    </div>
+                                    <div class="lft-head-src">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control head-src-style" placeholder="People, Group, message">
+                                            <button type="submit" class="head-src"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-lft-head" id="chat_sec">
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="white-sdow-box">
+                                    <div class="chat-user-list d-flex">
+                                        <div class="chat-user-img">
+                                            <a class="chat-img-box position-relative" href="#">
+                                                <img class="img-block" src="images/teacher/teacher1.jpg" alt="">
+                                                <span class="online-status1"><i class="fa-solid fa-circle"></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="chat-user-desc">
+                                            <div class="chat-user-info">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <h4>Jenni</h4>
+                                                        <h5>3 Days</h5>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                                </a>
+                                            </div>
+                                            <div class="chat-user-social">
+                                                <ul class="chat-social">
+                                                    <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-rgt">
+                            <div class="white-sdow-box">
+                                <div class="chat-rgt-head d-flex">
+                                   <div class="chat-rgt-head-lft">
+                                        <h4>Jenni <span class="user-name-id">@jenniteachereng2023</span></h4>
+                                        <ul class="user-activity-time d-flex">
+                                            <li>Last Seen: 30 munites ago</li>
+                                            <li>Local Time:  April 02, 2023, 11:37am</li>
+                                        </ul>
+                                   </div> 
+                                   <div class="chat-rgt-head-rgt">
+                                        <div class="hover-dropdown">
+                                            <button type="button" class="hover-dropdown-spot"><i class="fa-solid fa-ellipsis"></i></button>
+                                            <div class="hover-dropdown-menu">
+                                                <ul>
+                                                    <li><a href="#">option 1</a></li>
+                                                    <li><a href="#">option 2</a></li>
+                                                    <li><a href="#">option 3</a></li>
+                                                    <li><a href="#">option 4</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                   </div> 
+                                </div>
+                            </div>
+                            <div class="white-sdow-box">
+                                <div class="chat-msg-wrap">
+                                    <div class="receive-message d-flex">
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>hi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sent-message d-flex justify-content-end">
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>yes</p>
+                                            </div>
+                                        </div>
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="receive-message d-flex">
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>ami guiter shikhte chai</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="receive-message d-flex">
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>mase kto kre</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sent-message d-flex justify-content-end">
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>apni age asun</p>
+                                            </div>
+                                        </div>
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="sent-message d-flex justify-content-end">
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>ktha bli</p>
+                                            </div>
+                                        </div>
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="receive-message d-flex">
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>apni faka thaken kakhon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sent-message d-flex justify-content-end">
+                                        <div class="chat-msg-desc">
+                                            <span class="chat-msg-name"><strong>Jenni</strong>April 02, 2023, 11:37am</span>
+                                            <div class="chat-msg-text">
+                                                <p>sonibar r robibar</p>
+                                            </div>
+                                        </div>
+                                        <div class="chat-msg-user">
+                                            <span class="chat-msg-user-img"><img class="img-block" src="images/teacher/teacher1.jpg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-type-wrap">
+                                    <div class="message-type-box position-relative">
+                                        <div class="message-icon-lft">
+                                            <ul class="d-flex">
+                                                <li><button type="button" class="msg-emoji"><i class="fa-regular fa-face-smile"></i></button></li>
+                                                <li class="msg-file-up">
+                                                    <input type="file" id="msg-file" hidden>
+                                                    <label class="msg-file-icon" for="msg-file"><i class="fa-solid fa-paperclip"></i></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <textarea name="" id="" class="form-control chat-type-textare" rows="5" placeholder="Type a message"></textarea>
+                                        <div class="message-icon-rgt">
+                                            <ul class="d-flex">
+                                                <li><button type="button" class="msg-submit"><i class="fa-regular fa-paper-plane"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="sticky-top-box">
+                        <div class="white-sdow-box mb-4">
+                            <div class="user-info-rgt">
+                                <h4>Jenni <span class="user-name-id">@jenniteachereng2023</span></h4>
+                                <p>Fluency Inspiring Learning</p>
+                                <ul class="d-flex flex-wrap details-info mt-1">
+                                    <li class="info-stars-list"><div class="stars" style="--rating: 4.3;"></div><span class="total-revw">4.3</span></li>
+                                    <li><i class="fa-solid fa-message"></i> <strong>1547</strong></li>
+                                    <li>
+                                        <div class="country-flag">
+                                            <span class="flag-icon flag-icon-us flag-icon-squared country-flag-circle"></span>
+                                            <span class="teacher-country-name2">United States</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="user-info-rgt-desc">
+                                    <li><strong>245</strong>Total Class</li>
+                                    <li><strong>97%</strong>Response Rate</li>
+                                    <li><strong>875</strong>Total Hour</li>
+                                    <li><strong>19%</strong>Repet Hire Rate</li>
+                                </ul>
+                                <ul class="user-info-rgt-desc">
+                                    <li><strong>Native :</strong>Chinese</li>
+                                    <li><strong>Speaks :</strong>English C2, Chinese A2 Proficient</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lesson-teacher-widget">
+                            <div class="lesson-widget-box">
+                                <span class="widget-box-img">
+                                    <img class="img-block" src="images/availab1.jpg" alt="">
+                                </span>
+                                <div class="widget-box-text">
+                                    <h4>Ultimate Google Ads Training 2021: Profit with Pay Per Click</h4>
+                                    <p>Date : <strong>16th mar, 2023</strong></p>
+                                    <p>Duration: <strong>30min</strong></p>
+                                    <p>Available Seat : <strong>20</strong></p>
+                                    <h3>$649 <del>$3,499</del></h3>
+                                </div>
+                                <div class="widget-box-btn">
+                                    <a href="#">book lesson</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer ftr-bg-ptrn-wrap">
+        <span class="ftr-bg-ptrn"><img  class="img-block" src="images/ftr-bg-pettrn.png" alt=""></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-about">
+                        <span class="ftr-logo">
+                            <img class="img-block" src="images/logo-clr.png" alt="">
+                        </span>
+                        <ul class="ftr-about-list">
+                            <li><i class="fa-solid fa-globe"></i>US International</li>
+                            <li><i class="fa-solid fa-circle-question"></i><a href="#">Help & Support</a></li>
+                            <li><i class="fa-solid fa-dollar-sign"></i>USD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-menu-wrap">
+                        <h4>About</h4>
+                        <ul class="ftr-menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-menu-wrap">
+                        <h4>Terms</h4>
+                        <ul class="ftr-menu">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Copyright Policy</a></li>
+                            <li><a href="#">Code of Conduct</a></li>
+                            <li><a href="#">Fees and Charges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="ftr-social">
+                        <h4>App</h4>
+                        <ul class="ftr-app-store">
+                            <li><a href="#"><img class="img-block" src="images/icon/google-play.png" alt=""></a></li>
+                            <li><a href="#"><img class="img-block" src="images/icon/apple-store.png" alt=""></a></li>
+                        </ul>
+                        <ul class="ftr-social-list d-flex">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btm-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="btm-ftr-text">
+                           <p><strong>94,402,550</strong></p>
+                           <p>Registered Users</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="btm-ftr-text">
+                            <p><strong>56,256,656</strong></p>
+                            <p>Teacher</p>
+                         </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="btm-ftr-text">
+                            <p>Lorem Ipsum ® is a registered Trademark of Lorem Ipsum</p>
+                            <p>Copyright © 2023 Aqualeaf It Solution Pvt. Ltd.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- <script>
+        // var winHeight = $(document).outerHeight();
+        var headerHeight = $('.main-header').outerHeight();
+        var foterHeight = $('.footer').outerHeight();
+        var totalHeight = headerHeight - foterHeight;
+        $('#chat_sec').css({"height": totalHeight, "overflow-x": "auto"});
+    </script> -->
+
+    
+    
+</body>
+</html>

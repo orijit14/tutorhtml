@@ -12,7 +12,18 @@
     // }
 }
 
-@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1366px) {
+    .custome-popup{
+        max-width: 450px;
+        .custome-popup-wrap{
+            .quary-body{
+                .front-textare-style{
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 1350px) {}
 

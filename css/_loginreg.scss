@@ -1,0 +1,124 @@
+.custom-width-modal{
+    .modal-dialog{
+        max-width: 580px;
+    }
+}
+.log-reg-wrap{
+    padding: 1.5rem;
+    .log-reg-head-wrap{
+        margin-bottom: 1.875rem;
+        .log-reg-head{
+            h4{
+                font-size: 1.25rem;
+                color: #01478c;
+                padding-bottom: 0;
+            }
+        }
+        .log-reg-btn-wrap{
+            .log-reg-btn{
+                height: 36px;
+                line-height: 35px;
+                border: 1px solid #666;
+                color: #666;
+                background-color: transparent;
+                padding: 0 15px;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-size: 1rem;
+            }
+        }
+    }
+    .forget-pass-wrap {
+        .forget-pass-btn{
+            color: #01478c;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    }
+    .log-reg-submit-wrap{
+        margin-top: 3.125rem;
+        .log-reg-submit-btn{
+            text-transform: uppercase;
+            font-size: 1rem;
+            background-color: #08d0f5;
+            color: #01478c;
+            padding: 0 30px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            border: none;
+            width: 100%;
+            &:hover{
+                background-color: #01478c;
+                color: #fff;
+            }
+        }
+    }
+    .trouble-sign {
+        margin-top: 1rem;
+        a{
+            color: #666;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 0.688rem;
+            display: block;
+        }
+    }
+    .or-text {
+        margin: 3.125rem 0;
+        p{
+            text-align: center;
+            padding-bottom: 0;
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+    }
+}
+.add-icon-lft {
+    .icon-lft{
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #08d0f5;
+        display: block;
+        line-height: 1;
+        font-size: 1rem;
+    }
+    .front-input-style {
+        padding-left: 2.313rem;
+    }
+}
+.add-icon-rgt {
+    .icon-rgt{
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #08d0f5;
+        display: block;
+        line-height: 1;
+        font-size: 1rem;
+    }
+    .front-input-style {
+        padding-right: 2.313rem;
+    }
+}
+.front-input {
+    @include frontInput;
+    margin-bottom: 1.875rem;
+    .front-input-style{
+        &::placeholder{
+            font-size: 0.813rem;
+        }
+    }
+}
+.front-textare {
+    .front-textare-style{
+        &::placeholder{
+            font-size: 0.813rem;
+        }
+    }
+}

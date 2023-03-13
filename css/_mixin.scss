@@ -1,0 +1,8 @@
+@mixin frontInput{
+    .front-input-style{
+        height: 50px;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+        border: none;
+    }
+}
