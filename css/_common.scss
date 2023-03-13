@@ -1180,7 +1180,7 @@ input[type=number]{
     .the-video{
         iframe{
             border-radius: 0.4rem;
-            width: 297px;
+            max-width: 297px;
             height: 215px;
         }
     }
