@@ -22752,7 +22752,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .teacher-gallery-video .the-video iframe,
 .teacher-gallery-image .the-video iframe {
   border-radius: 0.4rem;
-  width: 297px;
+  max-width: 297px;
   height: 215px;
 }
 
