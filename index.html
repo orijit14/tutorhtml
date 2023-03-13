@@ -11,6 +11,8 @@
 
     <!-- Owl -->
     <link href="css/owl.carousel.min.css" media="all" rel="stylesheet">
+    
+    <link href="css/intlTelInput.css" media="all" rel="stylesheet">
     <!-- Style Css -->
     <link href="css/style.css" media="all" rel="stylesheet">
 </head>
@@ -772,7 +774,72 @@
                     </div>
                 </div>
                 <div class="log-reg-submit-wrap">
-                    <button type="button" class="log-reg-submit-btn">Register</button>
+                    <button type="button" class="log-reg-submit-btn" data-bs-toggle="modal" data-bs-target="#phoneVerify" data-bs-dismiss="modal" aria-label="Close">Register</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone verify -->
+  <div class="modal fade only-modal-body custom-width-modal" id="phoneVerify" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button class="modal-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-circle-xmark"></i></button>
+            <div class="log-reg-wrap">
+                <div class="log-reg-head-wrap row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="log-reg-head">
+                            <h4>Enter Your Phone Number</h4>
+                            <p>We will send you the 4 digit verification code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-input">
+                    <div class="position-relative add-icon-lft">
+                        <div class="phone-input-wrap">
+                            <input name="phone" type="tel" id="phone_prifix" class="form-control logreg-input-style" placeholder="Phone Number" value="+91">
+                        </div>
+                        <span class="icon-lft"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    </div>
+                </div>
+                <div class="log-reg-submit-wrap">
+                    <button type="button" class="log-reg-submit-btn" data-bs-toggle="modal" data-bs-target="#verifyotp" data-bs-dismiss="modal" aria-label="Close">Generate code</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- verify otp-->
+  <div class="modal fade only-modal-body custom-width-modal" id="verifyotp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button class="modal-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-circle-xmark"></i></button>
+            <div class="log-reg-wrap">
+                <div class="log-reg-head-wrap row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="log-reg-head">
+                            <h4>Phone Verification</h4>
+                            <p>Enter the code sent to +91 0000 xxx 000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-input otp-input-wrap">
+                    <input type="number" class="form-control front-input-style">
+                    <input type="number" class="form-control front-input-style">
+                    <input type="number" class="form-control front-input-style">
+                    <input type="number" class="form-control front-input-style">
+                </div>
+                <div class="dont-rcv-otp">
+                    <p>Didn't  receive message? <a href="#">Resend</a></p>
+                </div>
+                <div class="log-reg-submit-wrap">
+                    <button type="button" class="log-reg-submit-btn" data-bs-dismiss="modal" aria-label="Close">verify & Continue</button>
                 </div>
             </div>
         </div>
@@ -785,7 +852,25 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
     <script src="js/typed.min.js"></script>
+
+    <script>
+        // <!---------------------------------------Phone Prefix------------------------------------->
+
+        input = document.querySelector("#phone_prifix");
+        // init plugin
+        var iti = window.intlTelInput(input, {
+        hiddenInput: "full_phone"
+        });
+
+        // var input = document.querySelector("#phone_prifix");
+        // window.intlTelInput(input, {
+        // // utilsScript: "js/utils.js",
+        //     initialCountry: "gb",
+        //     separateDialCode: true
+        // }); 
+    </script>
 
     <script>
        var menuheight = $(".main-header").outerHeight();

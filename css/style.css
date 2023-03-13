@@ -23632,6 +23632,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   color: #01478c;
   padding-bottom: 0;
 }
+.log-reg-wrap .log-reg-head-wrap .log-reg-head p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #838484;
+}
 .log-reg-wrap .log-reg-head-wrap .log-reg-btn-wrap .log-reg-btn {
   height: 36px;
   line-height: 35px;
@@ -23661,9 +23666,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   line-height: 50px;
   text-align: center;
   border-radius: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 .log-reg-wrap .log-reg-submit-wrap .log-reg-submit-btn:hover {
   background-color: #01478c;
@@ -23723,7 +23729,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .front-input .front-input-style {
   height: 50px;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19) !important;
   border: none;
 }
 .front-input .front-input-style::-moz-placeholder {
@@ -23739,6 +23745,51 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .front-textare .front-textare-style::placeholder {
   font-size: 0.813rem;
+}
+
+.phone-input-wrap {
+  height: 50px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19) !important;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.phone-input-wrap .iti {
+  width: 100%;
+}
+.phone-input-wrap .logreg-input-style {
+  height: 50px;
+  border: none;
+  font-weight: 600;
+}
+
+.otp-input-wrap {
+  display: flex;
+}
+.otp-input-wrap input {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.otp-input-wrap input:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.dont-rcv-otp {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #838484;
+  font-weight: 600;
+}
+.dont-rcv-otp a {
+  color: #01478c;
 }
 
 .page-loader {

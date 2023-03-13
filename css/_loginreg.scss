@@ -13,6 +13,11 @@
                 color: #01478c;
                 padding-bottom: 0;
             }
+            p{
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500; 
+                color: #838484;
+            }
         }
         .log-reg-btn-wrap{
             .log-reg-btn{
@@ -47,9 +52,10 @@
             line-height: 50px;
             text-align: center;
             border-radius: 0.5rem;
-            font-weight: 600;
+            font-weight: 700;
             border: none;
             width: 100%;
+            font-family: "Montserrat", sans-serif;
             &:hover{
                 background-color: #01478c;
                 color: #fff;
@@ -120,5 +126,47 @@
         &::placeholder{
             font-size: 0.813rem;
         }
+    }
+}
+.phone-input-wrap {
+    height: 50px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19) !important;
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    .iti{
+        width: 100%;
+    }
+    .logreg-input-style{
+        height: 50px;
+        border: none;
+        font-weight: 600;
+    }
+}
+.otp-input-wrap {
+    display: flex;
+    input{
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5rem;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+}
+.dont-rcv-otp {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #838484;
+    font-weight: 600;
+    a{
+        color: #01478c; 
     }
 }
