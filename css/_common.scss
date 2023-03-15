@@ -1608,6 +1608,22 @@ input[type=number]{
         }
     }
 }
+.chat_user_scroll{
+    height: calc(100vh - 220px);
+    overflow-y: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    .white-sdow-box{
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.08);
+    }
+}
+.msg_scroll{
+    height: calc(100vh - 320px);
+    overflow-y: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+}
 .chat-lft {
     flex: 0 0 420px;
     max-width: 420px;
@@ -2130,6 +2146,22 @@ input[type=number]{
                 font-weight: 700;
                 margin-right: 1rem;
             }
+        }
+    }
+}
+.gallery-more-wrap {
+    text-align: center;
+    .gallery-more-btn{
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #ebeaea;
+        padding: 0 1.25rem;
+        border-radius: 0.3rem;
+        background-color: transparent;
+        &:hover{
+            background-color: #08d0f5;
+            border-color: #08d0f5;
+            color: #fff;
         }
     }
 }
