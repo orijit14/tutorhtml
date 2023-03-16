@@ -2165,6 +2165,75 @@ input[type=number]{
         }
     }
 }
+.checkout-wrap {
+    h3{
+        font-size: 1.25rem;
+        color: #08d0f5;
+        text-transform: capitalize; 
+        padding-bottom: 0; 
+        font-family: "Montserrat", sans-serif;
+    }
+}
+.checkout-table {
+    font-family: "Montserrat", sans-serif;
+    .table{
+        tbody{
+            tr{
+                td{
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    vertical-align: middle;
+                   .clas-img{
+                    display: block;
+                    max-width: 60px;
+                    margin-left: auto;
+                   }
+                   h4{
+                    font-size: 1rem;
+                    padding-bottom: 0;
+                    color: #08d0f5;
+                   }
+                   h5{
+                    font-size: 0.875rem;
+                    padding-bottom: 0;
+                   }
+                }
+            }
+        }
+    }
+}
+.card-input-wrap {
+    .card-input-style{
+        border: none;
+        border-bottom: 1px solid #c2c2c2;
+        &::placeholder{
+            font-size: 0.875rem;
+            color: #d8d8d8;
+        }
+    }
+}
+.payment-wrap{
+    .payment-card{
+        .card-input-wrap{
+            margin-bottom: 0.813rem;
+        }
+    }
+}
+.checkout-btn-wrap {
+    margin-top: 1rem;
+    .blue-btn{
+        border: none;
+        width: 100%;
+    }
+}
+.checkout-user-head {
+    h3{
+        font-size: 1.25rem;
+        color: #08d0f5;
+        text-transform: capitalize;
+        font-family: "Montserrat", sans-serif;
+    }
+}
 
 
 
