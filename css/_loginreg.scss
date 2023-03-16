@@ -137,6 +137,7 @@
 .front-input {
     @include frontInput;
     margin-bottom: 1.875rem;
+    font-family: "Montserrat", sans-serif;
     .front-input-style{
         &::placeholder{
             font-size: 0.813rem;
@@ -145,6 +146,7 @@
 }
 .front-textare {
     .front-textare-style{
+        font-family: "Montserrat", sans-serif;
         &::placeholder{
             font-size: 0.813rem;
         }

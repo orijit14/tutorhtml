@@ -23684,6 +23684,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .card-input-wrap .card-input-style {
+  font-family: "Montserrat", sans-serif;
   border: none;
   border-bottom: 1px solid #c2c2c2;
 }
@@ -23845,6 +23846,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .front-input {
   margin-bottom: 1.875rem;
+  font-family: "Montserrat", sans-serif;
 }
 .front-input .front-input-style {
   height: 50px;
@@ -23859,10 +23861,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-size: 0.813rem;
 }
 
+.front-textare .front-textare-style {
+  font-family: "Montserrat", sans-serif;
+}
 .front-textare .front-textare-style::-moz-placeholder {
   font-size: 0.813rem;
 }
-
 .front-textare .front-textare-style::placeholder {
   font-size: 0.813rem;
 }
