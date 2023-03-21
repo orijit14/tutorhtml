@@ -118,6 +118,9 @@
     .front-input-style {
         padding-left: 2.313rem;
     }
+    .front-select-style {
+        padding-left: 2.313rem;
+    }
 }
 .add-icon-rgt {
     .icon-rgt{
@@ -143,6 +146,11 @@
             font-size: 0.813rem;
         }
     }
+}
+.front-select {
+    @include frontSelect;
+    margin-bottom: 1.875rem;
+    font-family: "Montserrat", sans-serif;
 }
 .front-textare {
     .front-textare-style{
@@ -201,6 +209,27 @@
             &:not(:last-child){
                 margin-bottom: 0.625rem;
             }
+        }
+    }
+}
+.user-type-details {
+    .nav{
+        .nav-item{
+            .nav-link{
+                border-radius: 0;
+                line-height: 1;
+                padding: 0.5rem;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                color: #08d0f5;
+                text-transform: uppercase;
+                background-color: transparent;
+                &.active{
+                    color: #01478c;
+                    border-bottom: 3px solid;
+                }
+            }            
         }
     }
 }

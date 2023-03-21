@@ -834,8 +834,100 @@
                 <div class="log-reg-submit-wrap">
                     <ul class="d-flex justify-content-between">
                         <li><button type="button" class="log-reg-back-btn" data-bs-toggle="modal" data-bs-target="#phoneVerify" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-reply"></i>back</button></li>
-                        <li><button type="button" class="log-reg-submit-btn" data-bs-dismiss="modal" aria-label="Close">verify & Continue</button></li>
+                        <li><button type="button" class="log-reg-submit-btn" data-bs-toggle="modal" data-bs-target="#usertype" data-bs-dismiss="modal" aria-label="Close">verify & Continue</button></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- User Tyle -->
+  <div class="modal fade only-modal-body custom-width-modal" id="usertype" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button class="modal-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-circle-xmark"></i></button>
+            <div class="log-reg-wrap user-type-details">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-teacher-tab" data-bs-toggle="pill" data-bs-target="#pills-teacher" type="button" role="tab" aria-controls="pills-teacher" aria-selected="true">teacher</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student" aria-selected="false">student</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-teacher" role="tabpanel" aria-labelledby="pills-teacher-tab">
+                        <div class="front-input">
+                            <div class="position-relative add-icon-lft">
+                                <span class="icon-lft"><i class="fa-solid fa-language"></i></span>
+                                <input type="email" class="form-control front-input-style" placeholder="Native Language">
+                            </div>
+                        </div>
+                        <div class="front-select">
+                            <div class="position-relative add-icon-lft">
+                                <span class="icon-lft"><i class="fa-solid fa-language"></i></span>
+                                <select class="form-select front-select-style">
+                                    <option value="">Other Language</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="front-select">
+                            <div class="position-relative add-icon-lft">
+                                <span class="icon-lft"><i class="fa-solid fa-flag"></i></span>
+                                <select class="form-select front-select-style">
+                                    <option value="">Country</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="front-input">
+                            <div class="position-relative add-icon-lft">
+                                <span class="icon-lft"><i class="fa-solid fa-hashtag"></i></span>
+                                <input type="email" class="form-control front-input-style" placeholder="Tag Line">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="checkbox ps-2">
+                                    <input type="checkbox" id="agreeTerm">
+                                    <label for="agreeTerm"><a href="#">Agree to terms and conditions</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="log-reg-submit-wrap">
+                            <ul class="d-flex justify-content-end">
+                                <!-- <li><button type="button" class="log-reg-back-btn" data-bs-toggle="modal" data-bs-target="#verifyotp" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-reply"></i>back</button></li> -->
+                                <li><button type="button" class="log-reg-submit-btn" data-bs-dismiss="modal" aria-label="Close">register</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
+                        <div class="front-select">
+                            <div class="position-relative add-icon-lft">
+                                <span class="icon-lft"><i class="fa-solid fa-flag"></i></span>
+                                <select class="form-select front-select-style">
+                                    <option value="">Country</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="checkbox ps-2">
+                                    <input type="checkbox" id="agreeTerm">
+                                    <label for="agreeTerm"><a href="#">Agree to terms and conditions</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="log-reg-submit-wrap">
+                            <ul class="d-flex justify-content-end">
+                                <!-- <li><button type="button" class="log-reg-back-btn" data-bs-toggle="modal" data-bs-target="#verifyotp" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-reply"></i>back</button></li> -->
+                                <li><button type="button" class="log-reg-submit-btn" data-bs-dismiss="modal" aria-label="Close">register</button></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

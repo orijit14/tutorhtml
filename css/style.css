@@ -23829,6 +23829,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .add-icon-lft .front-input-style {
   padding-left: 2.313rem;
 }
+.add-icon-lft .front-select-style {
+  padding-left: 2.313rem;
+}
 
 .add-icon-rgt .icon-rgt {
   position: absolute;
@@ -23859,6 +23862,17 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .front-input .front-input-style::placeholder {
   font-size: 0.813rem;
+}
+
+.front-select {
+  margin-bottom: 1.875rem;
+  font-family: "Montserrat", sans-serif;
+}
+.front-select .front-select-style {
+  height: 50px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19) !important;
+  border: none;
 }
 
 .front-textare .front-textare-style {
@@ -23921,6 +23935,22 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .others-social-login ul li:not(:last-child) {
   margin-bottom: 0.625rem;
+}
+
+.user-type-details .nav .nav-item .nav-link {
+  border-radius: 0;
+  line-height: 1;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #08d0f5;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.user-type-details .nav .nav-item .nav-link.active {
+  color: #01478c;
+  border-bottom: 3px solid;
 }
 
 .page-loader {
