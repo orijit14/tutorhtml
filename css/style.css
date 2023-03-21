@@ -24044,6 +24044,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   color: #f00;
 }
 
+.borderRed {
+  border-color: #f00;
+}
+
 .page-loader {
   position: fixed;
   width: 100%;
