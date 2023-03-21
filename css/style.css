@@ -24040,6 +24040,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   border-bottom: 3px solid;
 }
 
+.errors {
+  color: #f00;
+}
+
 .page-loader {
   position: fixed;
   width: 100%;
