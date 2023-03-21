@@ -23982,6 +23982,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   height: 50px;
 }
 .phone-input-wrap .react-tel-input .form-control {
+  height: 50px;
   width: 100%;
   border: none;
 }
