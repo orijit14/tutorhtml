@@ -23983,7 +23983,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .phone-input-wrap .react-tel-input .form-control {
   width: 100%;
-  outline: none;
   border: none;
 }
 .phone-input-wrap .react-tel-input .flag-dropdown {
