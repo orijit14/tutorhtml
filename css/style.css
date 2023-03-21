@@ -23978,6 +23978,18 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   border: none;
   font-weight: 600;
 }
+.phone-input-wrap .react-tel-input {
+  height: 50px;
+}
+.phone-input-wrap .react-tel-input .form-control {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.phone-input-wrap .react-tel-input .flag-dropdown {
+  background-color: transparent;
+  border: none;
+}
 
 .otp-input-wrap {
   display: flex;

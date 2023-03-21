@@ -177,6 +177,18 @@
         border: none;
         font-weight: 600;
     }
+    .react-tel-input{
+        height: 50px;
+        .form-control {
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+        .flag-dropdown  {   
+            background-color: transparent;
+            border: none;
+        }
+    }
 }
 .otp-input-wrap {
     display: flex;
