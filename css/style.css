@@ -23917,6 +23917,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   display: block;
   line-height: 1;
   font-size: 1rem;
+  cursor: pointer;
 }
 .add-icon-rgt .front-input-style {
   padding-right: 2.313rem;
