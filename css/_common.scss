@@ -343,8 +343,11 @@ input[type=number]{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        color: #121212;
-        font-size: 1.5rem;
+        color: #121212 !important;
+        font-size: 1.5rem !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
         &.disabled{
             opacity: 0;
             visibility: hidden;
